@@ -1,0 +1,8 @@
+<ul>
+	<li class="list" ng-repeat="new in news" ng-click=detail($index)>
+		<p class="title">{{new.title}}</p>
+		<p class="img"><img ng-src="{{new.thumbnail_pic_s}}" alt="新闻" titile="新闻"></p>
+		<span>{{new.date}}</span>
+	</li>
+</ul>
+<load></load>

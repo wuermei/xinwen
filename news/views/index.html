@@ -1,0 +1,24 @@
+<ul>
+	<li class="list" ng-repeat="new in news" ng-click=detail($index)>
+		<p class="title">{{new.title}}</p>
+		<p class="img"><img ng-src="{{new.thumbnail_pic_s}}" alt="新闻" titile="新闻"></p>
+		<span>{{new.date}}</span>
+	</li>
+</ul>
+<load></load>
+<!-- <script>
+	app.directive('detailWeb',function(){
+		templateUrl:'detail.html'
+		return{
+			link:function(scope,elm,attr){
+				var li = document.getElementsByTagName('li');
+				console.log(li);
+				angular.element(li).addEventListener('touchstart',function(){
+					console.log('a');
+				})
+				
+			}
+		}
+	})
+</script>
+ -->
